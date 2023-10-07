@@ -1,0 +1,60 @@
+.contenedor_slider {
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    @import '/src/styles.scss';
+
+    .slider {
+        position: relative;
+        display: flex;
+        width: 100%;
+
+        .btn_slider {
+            span {
+                display: flex;
+                position: absolute;
+                background: #fff;
+                height: 3.333vw;
+                width: 3.333vw;
+                border-radius: 50%;
+                z-index: 1;
+                justify-content: center;
+                top: 50%;
+
+                img {
+                    width: 30%;
+                }
+
+                &:first-child {
+                    left: 2.5vw;
+                    img{
+                        margin-right: 0.25vw;
+                    }
+                }
+                &:last-child{
+                    right: 2.5vw;
+                    img{
+                        margin-left: 0.25vw;
+                    }
+                }
+            }
+
+        }
+
+        .tar {
+            position: relative;
+            height: 53.5vw;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: 100%;
+
+            .home_slider {
+                position: absolute;
+                left: 8.333vw;
+                top: 13.8vw;
+                color: $color-font1;
+            }
+        }
+    }
+}
