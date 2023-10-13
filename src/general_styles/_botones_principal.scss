@@ -1,0 +1,35 @@
+@import './fonts';
+@mixin botones(
+    $fontfamily:'Montserrat',
+    $color-font1: #fff, 
+    $color-font2: #00BAD4, 
+    $bg1:#00BAD4, 
+    $bg2:#fff, 
+    $radius:1.39vw, 
+    $padding1:0.69vw, 
+    $padding2:1.94vw,
+    $f-size:$size-nav,
+    $weight:700) 
+    {
+    .button1 {
+        background: $bg1;
+        padding: $padding1 $padding2;
+        border-radius: $radius;
+        color: $color-font1;
+        font-size: $f-size;
+        font-weight: $weight;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .button2 {
+        background: $bg2;
+        padding: $padding1 $padding2;
+        border-radius: $radius;
+        color: $color-font2;
+        font-size: $f-size;
+        font-weight: $weight;
+        border: 0;
+        cursor: pointer;
+    }
+}

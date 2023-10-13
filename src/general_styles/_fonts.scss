@@ -1,2 +1,23 @@
+
+//Family
+$fontfamily1:'Montserrat';
+$fontfamily2:'Heebo';
+$fontfamily3:'Comfortaa';
+
 //Colores
 $color-font1:#fff;
+$color-font2:#00BAD4;
+$color-font3:#4A989B;
+$color-font4:#3333;
+
+$size-logo:1.67vw;
+$size-nav:1.11vw;
+$size-h1-slider:4.17vw;
+$size-p-slider:1.67vw;
+
+@mixin fontstyle($family,$size,$weight,$color){
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}

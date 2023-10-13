@@ -1,9 +1,10 @@
+@import '/src/styles.scss';
+
 .contenedor_slider {
     display: flex;
     position: relative;
     width: 100%;
     margin: 0;
-    @import '/src/styles.scss';
 
     .slider {
         position: relative;
@@ -15,26 +16,30 @@
                 display: flex;
                 position: absolute;
                 background: #fff;
-                height: 3.333vw;
-                width: 3.333vw;
+                height: 4.44vw;
+                width: 4.44vw;
                 border-radius: 50%;
                 z-index: 1;
                 justify-content: center;
                 top: 50%;
+                cursor: pointer;
 
                 img {
                     width: 30%;
                 }
 
                 &:first-child {
-                    left: 2.5vw;
-                    img{
+                    left: 3.33vw;
+
+                    img {
                         margin-right: 0.25vw;
                     }
                 }
-                &:last-child{
-                    right: 2.5vw;
-                    img{
+
+                &:last-child {
+                    right: 3.33vw;
+
+                    img {
                         margin-left: 0.25vw;
                     }
                 }
@@ -51,9 +56,33 @@
 
             .home_slider {
                 position: absolute;
-                left: 8.333vw;
-                top: 13.8vw;
+                left: 11.25vw;
+                top: 18.40vw;
                 color: $color-font1;
+
+                .text_slider {
+                    display: flex;
+                    flex-direction: column;
+
+                    h1 {
+                        @include fontstyle($fontfamily1, $size-h1-slider, 600, $color-font1);
+                        margin-bottom: 2.22vw;
+                        
+                    }
+
+                    p {
+
+                        width: 44.44vw;
+                        @include fontstyle($fontfamily2, $size-p-slider, 400, $color-font1);
+                        margin-bottom: 3.68vw;
+                    }
+                }
+
+                .btns_home_slider {
+                    display: flex;
+                    gap: 1.04vw;
+                    @include botones();
+                }
             }
         }
     }
