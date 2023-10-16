@@ -1,0 +1,16 @@
+<div class="armador">
+    <div class="menu-left">
+        <nav>
+            <ul class="navigation">
+              <li><a (click)="texto='Pileta?'">Pileta?</a></li>
+              <li><a (click)="texto='Colores'">Colores</a></li>
+              <li><a (click)="getUsuario()"> Llamada /api/test</a></li>
+              <li><a (click)="texto='Luces'">Luces</a></li>
+              <li><a (click)="texto='Nico dame ideas xd'">No se que más</a></li>
+            </ul>
+          </nav>
+    </div>
+    <div class="cont-armador">
+        {{texto}}
+    </div>
+</div>

@@ -1,0 +1,37 @@
+@import "/src/styles.scss";
+.armador{
+    display: flex;
+    .menu-left{
+        display: flex;
+        position: relative;
+        nav{
+            display: flex;
+            width: 12vw;
+            height:80vh;
+            background:#333;
+            transition:.4s ease;
+          }
+          .navigation{
+            padding: 0;
+            width: 100%;
+          }
+          .navigation li{
+            list-style:none;
+            cursor: pointer;
+            border-bottom: 1px solid rgba(255,255,255,.5);
+          }
+          
+          .navigation a{
+            color:#fff;
+            display: block;
+            line-height:3.5;
+            padding: 0 1vw;
+            text-decoration:none;
+            transition:.4s ease;
+          }
+          
+          .navigation a:hover{
+            transform:translateX(10%);
+          }
+    }
+}

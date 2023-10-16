@@ -12,11 +12,13 @@ import { TestimoniosComponent } from './home/testimonios/testimonios.component';
 import { ContactoComponent } from './home/contacto/contacto.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { ArmadorComponent } from './paginas/armador/armador.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from "@angular/common/http";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
-const rutas:Routes=[
-  {path:'',component:HomeComponent}
-];
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,12 +30,16 @@ const rutas:Routes=[
     TestimoniosComponent,
     ContactoComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ArmadorComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(rutas)
+    FormsModule,
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
