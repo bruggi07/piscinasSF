@@ -21,7 +21,7 @@
             border-bottom: 1px solid rgba(255,255,255,.5);
           }
           
-          .navigation a{
+          .navigation a, span{
             color:#fff;
             display: block;
             line-height:3.5;
@@ -30,7 +30,7 @@
             transition:.4s ease;
           }
           
-          .navigation a:hover{
+          .navigation a:hover, span:hover{
             transform:translateX(10%);
           }
     }

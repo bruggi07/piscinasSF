@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Usuario } from 'src/app/models/Usuario';
-import { GetUsuarioService } from 'src/app/services/get-usuario.service';
+import { Menu } from 'src/app/models/Menu';
+import { MenuService } from 'src/app/services/menu.service';
 
 @Component({
   selector: 'app-armador',
@@ -8,15 +8,14 @@ import { GetUsuarioService } from 'src/app/services/get-usuario.service';
   styleUrls: ['./armador.component.scss']
 })
 export class ArmadorComponent {
-  constructor(public getUser:GetUsuarioService){}
-  texto :any = "";
+  constructor(public menuService: MenuService) { }
+  
+  
+  menus: Menu[]=[];
 
-  getUsuario(){
-    let user;
-    this.getUser.getUsers().subscribe(data=>{
-        
-        
-        this.texto = JSON.stringify(data)
-    })
+  ngOnInit(){
+    this.menuService.getMenu().subscribe(
+      data => this.menus = data
+      )
   }
 }
