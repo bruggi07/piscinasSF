@@ -2,9 +2,24 @@
     <div class="menu-left">
         <nav>
             <ul class="navigation">
-              <li *ngFor="let menu of menus"><a>{{menu.menuItem}}</a></li>
+                <div *ngFor="let item of menu">
+                    <li><a (click)="showmenu('1')">{{item.menuItem}}</a></li>
+                    <input id="1" type="radio" name="submenuRadio">
+                    <div class="submenuShow" for="submenuRadio">
+                        <div class="submenu">
+                            <li><a>SubMenú 1</a></li>
+                        </div>
+                        <div class="submenu">
+                            <li><a>SubMenú 2</a></li>
+                        </div>
+                        <div class="submenu">
+                            <li><a>SubMenú 3</a></li>
+                        </div>
+                    </div>
+
+                </div>
             </ul>
-          </nav>
+        </nav>
     </div>
     <div class="cont-armador">
 

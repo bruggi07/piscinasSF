@@ -7,8 +7,8 @@
         nav{
             display: flex;
             width: 12vw;
-            height:80vh;
-            background:#333;
+            min-height:80vh;
+            background:$color-principal;
             transition:.4s ease;
           }
           .navigation{
@@ -19,10 +19,12 @@
             list-style:none;
             cursor: pointer;
             border-bottom: 1px solid rgba(255,255,255,.5);
+            z-index: 10;
           }
           
           .navigation a, span{
             color:#fff;
+            font-weight: 500;
             display: block;
             line-height:3.5;
             padding: 0 1vw;
@@ -32,6 +34,29 @@
           
           .navigation a:hover, span:hover{
             transform:translateX(10%);
+          }
+          input{
+            display: none;
+          }
+          .navigation input:checked + .submenuShow .submenu{
+            
+              opacity: 1;
+              height: 3vw;
+              pointer-events: all;
+              transition: all .3s ease;
+          
+          }
+          .submenu{
+            position: relative;
+            opacity: 0;
+            height: 0;
+            background:$color-secundario2;
+            pointer-events: none;
+            transition: all .3s ease;
+            z-index: 5;
+            a{
+              margin-left: 2.5vw;
+            }
           }
     }
 }

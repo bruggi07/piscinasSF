@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./slider.component.scss']
 })
 export class SliderComponent {
-  fondoTar='../assets/img/slider_home/fondo1.png'
+  fondoTar='../assets/img/slider_home/fondo1.webp'
 }

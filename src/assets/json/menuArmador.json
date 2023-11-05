@@ -1,0 +1,19 @@
+{
+    "Tamaño": [
+      "Grande",
+      "Mediana",
+      "Chica"
+    ],
+    "Color": [
+      "Azul",
+      "Celeste",
+      "Blanca"
+    ],
+    "Luces": {},
+    "Piso": [
+      "Normal",
+      "Atérmico"
+    ],
+    "Solarium": {},
+    "Escaleras": {}
+}
