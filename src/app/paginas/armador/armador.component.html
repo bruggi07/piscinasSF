@@ -3,7 +3,7 @@
         <nav>
             <ul class="navigation">
                 <div *ngFor="let item of menu; index as i">
-                    <li><a (click)="showmenu(i)">{{item.menuItem}}</a></li>
+                    <li><a (click)="showmenu(i)">{{item.menuItem}}<span *ngIf="item.flgSubmenu == 1">►</span></a></li>
                     <input id={{i}} type="radio" name="submenuRadio">
                     <div class="submenuShow" for="submenuRadio" >
                         <div class="submenu" *ngFor="let subItem of item.subMenu">

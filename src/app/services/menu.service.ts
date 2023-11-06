@@ -10,7 +10,6 @@ import { environment } from 'src/environments/environment.development';
 export class MenuService {
 
   urlMenu:string = environment.urlMenu;
-  urlSubMenu:string = environment.urlSubMenu;
   constructor(public http:HttpClient) { }
 
      // obtener menu

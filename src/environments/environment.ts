@@ -1,4 +1,4 @@
 export const environment = {
-    urlMenu:"/api/menu",
-    urlSubMenu:"/api/subMenu"
+    urlMenu:"/assets/json/menuArmador.json",
+    urlAPI:"/api/menu"
 };

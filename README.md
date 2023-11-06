@@ -8,7 +8,5 @@ Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The appl
 
 ## Build and public on Firebase
 
-run `ng build` for build `/dist` folder.
-
-run `./copyToPublic.sh` for copy files to Public Firebase folder and then run `firebase deploy` for deploy app on firebase hosting.
+run sh deploy.sh to build and deploy 
 

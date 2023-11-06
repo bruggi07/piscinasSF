@@ -1,19 +1,59 @@
-{
-    "Tamaño": [
-      "Grande",
-      "Mediana",
-      "Chica"
-    ],
-    "Color": [
-      "Azul",
-      "Celeste",
-      "Blanca"
-    ],
-    "Luces": {},
-    "Piso": [
-      "Normal",
-      "Atérmico"
-    ],
-    "Solarium": {},
-    "Escaleras": {}
-}
+[
+  {
+    "menuItem": "Tamaño",
+    "flgSubmenu":1,
+    "subMenu": [
+      {
+        "subMenuItem": "Pequeña"
+      },
+      {
+        "subMenuItem": "Mediana"
+      },
+      {
+        "subMenuItem": "Grande"
+      }
+    ]
+  },
+  {
+    "menuItem": "Color",
+    "flgSubmenu":1,
+    "subMenu": [
+      {
+        "subMenuItem": "Celeste"
+      },
+      {
+        "subMenuItem": "Blanco"
+      },
+      {
+        "subMenuItem": "Azul"
+      }
+    ]
+  },
+  {
+    "menuItem": "Piso",
+    "flgSubmenu":0,
+    "subMenu": []
+  },
+  {
+    "menuItem": "Solarium",
+    "flgSubmenu":0,
+    "subMenu": []
+  },
+  {
+    "menuItem": "Luces",
+    "flgSubmenu":1,
+    "subMenu": [
+      {
+        "subMenuItem": "Blancas"
+      },
+      {
+        "subMenuItem": "De colores"
+      }
+    ]
+  },
+  {
+    "menuItem": "Escaleras",
+    "flgSubmenu":0,
+    "subMenu": []
+  }
+]
