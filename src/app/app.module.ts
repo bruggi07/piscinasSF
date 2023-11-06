@@ -16,6 +16,7 @@ import { ArmadorComponent } from './paginas/armador/armador.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ArmadorPiletaComponent } from './components/armador-pileta/armador-pileta.component';
 
 
 
@@ -31,7 +32,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ContactoComponent,
     HeaderComponent,
     FooterComponent,
-    ArmadorComponent
+    ArmadorComponent,
+    ArmadorPiletaComponent
     
   ],
   imports: [

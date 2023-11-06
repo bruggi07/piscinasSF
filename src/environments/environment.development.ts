@@ -1,4 +1,4 @@
 export const environment = {
     urlMenu:"/api/menu",
-    urlUsuario:"/api/usuarios"
+    urlSubMenu:"/api/subMenu"
 };

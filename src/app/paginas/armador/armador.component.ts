@@ -10,11 +10,15 @@ import { MenuService } from 'src/app/services/menu.service';
 export class ArmadorComponent implements OnInit{
 
   menu: any
+  subMenu: any
   
   constructor( public menuService : MenuService) { }
   
-  showmenu(radID : string):void{
-    let check = document.getElementById(radID) as HTMLInputElement | null
+  showmenu(radID : number):void{
+
+    let ID = new Number(radID);
+    let check = document.getElementById(ID.toString()) as HTMLInputElement | null;
+
     if (check != null) {
       check.checked ? check.checked = false : check.checked = true;
     }
@@ -27,6 +31,7 @@ export class ArmadorComponent implements OnInit{
         console.log(this.menu)
       }
       })
+    }
 
-  }
+
 }

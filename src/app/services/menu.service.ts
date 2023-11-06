@@ -9,11 +9,12 @@ import { environment } from 'src/environments/environment.development';
 })
 export class MenuService {
 
-  url:string = environment.urlMenu
+  urlMenu:string = environment.urlMenu;
+  urlSubMenu:string = environment.urlSubMenu;
   constructor(public http:HttpClient) { }
 
-     // obtener listado de usuarios
+     // obtener menu
      getMenu(): Observable<Menu[]> {
-      return this.http.get<Menu[]>(this.url)
+      return this.http.get<Menu[]>(this.urlMenu);
     }
 }
