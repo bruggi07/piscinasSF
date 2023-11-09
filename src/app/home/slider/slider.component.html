@@ -1,20 +1,11 @@
-<div class="contenedor_slider">
-    <div class="slider">
-        <div class="btn_slider">
-            <span><img src="../assets/img/slider_home/slideLeft.svg"></span>
-            <span><img src="../assets/img/slider_home/slideRight.svg"></span>
-        </div>
-        <div class="tar" style="background-image: url('{{fondoTar}}');">
-            <div class="home_slider">
-                <div class="text_slider">
-                    <h1>Servicios personalizados</h1>
-                    <p>Construimos piscinas para hogares, especiales, públicas, lorem ipsum dolor sit amet consectetur. Felis amet et eu id malesuada habitant egestas faucibus id.</p>
-                </div>
-                <div class="btns_home_slider">
-                    <button routerLink="/armador" class="button1">PRESUPUESTAR</button>
-                    <button class="button2">CONOCENOS</button>
-                </div>
+<div class="wrappercarru">
+    <ngb-carousel *ngIf="images">
+        <ng-template ngbSlide *ngFor="let img of images">
+            <div class="picsum-img-wrapper">
+                <img [src]="img" alt="Random first slide" />
             </div>
-        </div>
-    </div>
+            <div class="carousel-caption">
+            </div>
+        </ng-template>
+    </ngb-carousel>
 </div>
