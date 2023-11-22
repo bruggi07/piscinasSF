@@ -1,0 +1,26 @@
+@import "/src/styles.scss";
+.wrapperIn{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    max-width: 44.4vw;
+    left: 11.11vw;
+    top: 13.19vw;
+    z-index: 100;
+    @include botones();
+    .text{
+        gap: 3.19vw;
+        margin-bottom: 10.4vw;
+        h1{
+            @include fontstyle($fontfamily1,$size-h1-slider,600,$color-font1);
+        }
+        p{
+            @include fontstyle($fontfamily2,$size-logo,400,$color-font1);
+        }
+    }
+    .wrapperBtn{
+        display: flex;
+        width: 100%;
+        gap: 1.4vw;
+    }
+}

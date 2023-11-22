@@ -1,0 +1,19 @@
+.wrapperOlas{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 38.61vw;
+    margin-top: -2.1vw;
+    margin-bottom: -2.1vw;
+    background-image: url("/assets/img/Home/fondoOndulado.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    .contenedor{
+        display: flex;
+        justify-content: space-between;
+        padding: 7vw 9.23vw;
+    }
+}

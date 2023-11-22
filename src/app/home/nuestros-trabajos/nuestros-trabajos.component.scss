@@ -1,0 +1,17 @@
+@import "../../../styles.scss";
+.wrapperNuestrosTrab{
+    display: flex;
+    background-image: url("../../../assets/img/Home/fondoOlasNuestrosClientes.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vw;
+    .contenedor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        span{
+            margin: auto;
+        }
+    }
+}

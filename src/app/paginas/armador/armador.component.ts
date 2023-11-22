@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Menu } from 'src/app/models/Menu';
-import { MenuService } from 'src/app/services/menu.service';
+import { UtilService } from 'src/app/services/util.service';
 
 @Component({
   selector: 'app-armador',
@@ -12,7 +11,7 @@ export class ArmadorComponent implements OnInit{
   menu: any
   subMenu: any
   
-  constructor( public menuService : MenuService) { }
+  constructor( public menuService : UtilService) { }
   
   showmenu(radID : number):void{
 

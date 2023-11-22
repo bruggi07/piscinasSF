@@ -2,11 +2,15 @@
 
 header {
     width: 100%;
-    background:rgba(0, 0, 0, 0.1);
-    position: sticky;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    position: fixed;
     top: 0;
     z-index: 100;
     height: $height-header;
+
     nav {
         display: flex;
         position: relative;
@@ -14,27 +18,34 @@ header {
         justify-content: space-between;
         padding: 0 9.31vw 0 11.25vw;
         height: 100%;
+        -webkit-user-select: none;
         user-select: none;
-        .logo{
+
+        .logo {
             cursor: pointer;
-            h1{
+
+            h1 {
                 text-align: center;
-                @include fontstyle($fontfamily3,$size-logo,700,$color-font1)
+                @include fontstyle($fontfamily3, $size-logo, 700, $color-font1)
             }
         }
+
         .menu {
             display: flex;
             align-items: center;
-            gap:3.34vw;
-            a{
+            gap: 3.34vw;
+
+            a {
                 cursor: pointer;
-                @include fontstyle($fontfamily1,$size-nav,600,$color-font1)
+                @include fontstyle($fontfamily1, $size-nav, 600, $color-font1)
             }
+
             @include botones();
         }
     }
 }
-.header-page{
+
+.header-page {
     position: relative;
     background: $color-secundario2;
 }

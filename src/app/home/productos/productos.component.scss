@@ -1,0 +1,14 @@
+.wrapperProdu{
+    display: flex;
+    background: #3333332f;
+    height: 40vw;
+    .productos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        span{
+            margin: auto;
+        }
+    }
+}
