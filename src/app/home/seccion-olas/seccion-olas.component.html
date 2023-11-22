@@ -2,9 +2,8 @@
     <div class="contenedor">
         <div class="sec1">
             <h2>¿Cómo simular y cotizar tu piscina?</h2>
-            <button class="button2">SIMULADOR</button>
+            <button routerLink="/armador" class="button2">SIMULADOR</button>
         </div>
-        <div class="sec2">
             <div *ngFor="let card of cards" class="cardcont">
                 <div class="circulo">
                     <img src="{{card.icono}}">
@@ -12,6 +11,5 @@
                 <h3>{{card.titulo}}</h3>
                 <p>{{card.texto}}</p>
             </div>
-        </div>
     </div>
 </div>

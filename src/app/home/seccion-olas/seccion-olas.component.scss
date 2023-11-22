@@ -1,4 +1,6 @@
-.wrapperOlas{
+@import "../../../styles.scss";
+
+.wrapperOlas {
     display: flex;
     position: relative;
     width: 100%;
@@ -11,9 +13,61 @@
     justify-content: center;
     align-items: center;
     z-index: 10;
-    .contenedor{
+
+    .contenedor {
         display: flex;
+        width: 100%;
+        align-items: start;
         justify-content: space-between;
         padding: 7vw 9.23vw;
+
+        .sec1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 21.2vw;
+            margin-top: 3vw;
+            gap: 6.9vw;
+
+            h2 {
+                @include fontstyle($fontfamily1, 2.22vw, 600, $color-font1);
+            }
+
+            button {
+                width: 11.11vw;
+            }
+
+            @include botones();
+        }
+            .cardcont {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                width: 17.22vw;
+                // height: 26.38vw;
+                .circulo {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    margin: auto;
+                    $tam: 13.194vw;
+                    width: $tam;
+                    height: $tam;
+                    border-radius: 50%;
+                    background: $color-font2;
+                    margin-bottom: 1.6vw;
+                }
+                h3{
+                    margin: auto;
+                    margin-bottom: 0.9vw;
+                    @include fontstyle($fontfamily2,1.6vw,500,$color-font1);
+                }
+                p{
+                    @include fontstyle($fontfamily2,1.25vw,400,$color-font1);
+                }
+            }
     }
 }
