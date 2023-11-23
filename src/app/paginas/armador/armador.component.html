@@ -7,15 +7,17 @@
                     <input id={{i}} type="radio" name="submenuRadio">
                     <div class="submenuShow" for="submenuRadio" >
                         <div class="submenu" *ngFor="let subItem of item.subMenu">
-                            <li><a>{{subItem.subMenuItem}}</a></li>
+                            <li (click)="setPresu(subItem.subMenuItem, subItem)"><a>{{subItem.subMenuItem}}</a></li>
                         </div>
                     </div>
-
                 </div>
+                <li><a (click)="setPresu('TEST',subMenu)">TEST</a></li>
             </ul>
         </nav>
     </div>
     <div class="cont-armador">
-        <app-armador-pileta></app-armador-pileta>
+        <div class="armador">
+            <span>{{presupuesto}}</span>
+        </div>
     </div>
 </div>
