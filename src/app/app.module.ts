@@ -11,7 +11,6 @@ import { ArmadorComponent } from './paginas/armador/armador.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ArmadorPiletaComponent } from './components/armador-pileta/armador-pileta.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { InicioComponent } from './home/inicio/inicio.component';
 import { ProductosComponent } from './home/productos/productos.component';
@@ -29,7 +28,6 @@ import { ValidacionComponent } from './home/validacion/validacion.component';
     HeaderComponent,
     FooterComponent,
     ArmadorComponent,
-    ArmadorPiletaComponent,
     InicioComponent,
     ProductosComponent,
     SeccionOlasComponent,
