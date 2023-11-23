@@ -1,10 +1,24 @@
 @import "../../styles.scss";
 .wrapperFooter{
     display: flex;
+    position: relative;
+    z-index: 999;
     width: 100%;
-    height: 20.8vw;
+    height: 20.5vw;
+    margin-top: -5.5vw;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    background: $color-principal;
+    svg{
+        position: absolute;
+        z-index: -1;
+    }
+    .logo {
+        cursor: pointer;
+        margin-top: 6vw;
+        text-decoration: none;
+        h1 {
+            text-align: center;
+            @include fontstyle($fontfamily3, $size-logo, 700, $color-font1)
+        }
+    }
 }

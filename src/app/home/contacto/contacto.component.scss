@@ -1,0 +1,104 @@
+@import "../../../styles.scss";
+
+.wrapperContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../../assets/img/Home/fondoOlasNuestrosClientes.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10vw;
+
+    .porqueEsperar {
+        display: flex;
+        flex-direction: column;
+        width: 93.2vw;
+        height: 24.3vw;
+        background-image: url("../../../assets/img/Home/imgInner1.webp");
+        background-repeat: no-repeat;
+        background-size: contain;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3.5vw;
+        margin-bottom: 7vw;
+        gap: 3vw;
+        @include botones($bg1: #468BA9);
+
+        h1 {
+            @include fontstyle($fontfamily1, 2.77vw, 700, $color-font1);
+        }
+
+        p {
+            @include fontstyle($fontfamily1, 1.94vw, 500, $color-font1);
+            text-align: center;
+            max-width: 50vw;
+        }
+    }
+
+    .contenedorCont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        h1 {
+            @include fontstyle($fontfamily4, 2.638vw, 400, $color-font4);
+            margin-bottom: 4.86vw;
+        }
+
+        .wrappertabla {
+            display: flex;
+            align-items: center;
+            gap: 5vw;
+
+            .tabla {
+                display: flex;
+                flex-direction: column;
+                width: 32vw;
+                gap: 2.6vw;
+
+                .card {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    height: 6.94vw;
+                    border-radius: .7vw;
+                    background-color: #F8F8F8E5;
+                    box-shadow: 0px 0.27vw 0.27vw 0px rgba(0, 0, 0, 0.25);
+                    gap: 2.1vw;
+                    padding-left: 2.1vw;
+
+                    p {
+                        @include fontstyle($fontfamily1, 1.666vw, 500, $color-font4)
+                    }
+
+                    img {
+                        width: 4.44vw;
+                    }
+                }
+
+                .cardWP {
+                    background-color: #26D046;
+
+                    p {
+                        color: $color-font1;
+                    }
+                }
+            }
+
+            .imgTabla {
+                width: 41.6vw;
+                // height: 27.77vw;
+                box-shadow: -7.8vw 7.8vw 0px -7.5vw rgba(0,186,212,1),
+                            7.8vw -7.8vw 0px -7.5vw rgba(0,186,212,1);
+                img{
+                    width: 100%;
+                    object-fit: fill;
+                }
+
+            }
+        }
+    }
+}
