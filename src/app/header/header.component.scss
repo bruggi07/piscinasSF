@@ -6,7 +6,7 @@ header {
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: 999;
     height: $height-header;

@@ -1,0 +1,28 @@
+@import "../../../styles.scss";
+
+.wrapperValida {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 23vw;
+    background: $color-principal;
+    .separador{
+        width: 0.0694vw;
+        height: 17vw;
+        background: #fff;
+    }
+    .sec1,.sec2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .principal{
+            @include fontstyle($fontfamily2,6.94vw,700,$color-font1);
+            line-height: 1;
+        }
+        .secundario{
+            @include fontstyle($fontfamily2,1.94vw,500,$color-font1);
+        }
+
+    }
+}
