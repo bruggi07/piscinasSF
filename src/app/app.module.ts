@@ -17,6 +17,7 @@ import { ProductosComponent } from './home/productos/productos.component';
 import { SeccionOlasComponent } from './home/seccion-olas/seccion-olas.component';
 import { NuestrosTrabajosComponent } from './home/nuestros-trabajos/nuestros-trabajos.component';
 import { ValidacionComponent } from './home/validacion/validacion.component';
+import { ImgInicioComponent } from './home/img-inicio/img-inicio.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { ValidacionComponent } from './home/validacion/validacion.component';
     ProductosComponent,
     SeccionOlasComponent,
     NuestrosTrabajosComponent,
-    ValidacionComponent
+    ValidacionComponent,
+    ImgInicioComponent
     
   ],
   imports: [

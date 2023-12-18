@@ -2,6 +2,7 @@
   {
     "menuItem": "Tamaño",
     "flgSubmenu":1,
+    "id":0,
     "subMenu": [
       {
         "subMenuItem": "Pequeña"
@@ -17,6 +18,7 @@
   {
     "menuItem": "Color",
     "flgSubmenu":1,
+    "id":1,
     "subMenu": [
       {
         "subMenuItem": "Celeste"
@@ -31,17 +33,27 @@
   },
   {
     "menuItem": "Piso",
-    "flgSubmenu":0,
-    "subMenu": []
+    "flgSubmenu":1,
+    "id":2,
+    "subMenu": [
+      {
+        "subMenuItem": "Normal"
+      },
+      {
+        "subMenuItem": "Atermico"
+      }
+    ]
   },
   {
     "menuItem": "Solarium",
     "flgSubmenu":0,
+    "id":3,
     "subMenu": []
   },
   {
     "menuItem": "Luces",
     "flgSubmenu":1,
+    "id":4,
     "subMenu": [
       {
         "subMenuItem": "Blancas"
@@ -54,6 +66,7 @@
   {
     "menuItem": "Escaleras",
     "flgSubmenu":0,
+    "id":5,
     "subMenu": []
   }
 ]

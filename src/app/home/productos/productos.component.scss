@@ -1,7 +1,9 @@
 .wrapperProdu{
     display: flex;
-    background: #3333332f;
     height: 40vw;
+    background-image: url('../../../assets/img/Home/imginicio.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
     .productos{
         display: flex;
         justify-content: center;

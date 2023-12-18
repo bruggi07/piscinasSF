@@ -5,11 +5,11 @@
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    height: 23vw;
+    height: 12vw;
     background: $color-principal;
     .separador{
         width: 0.0694vw;
-        height: 17vw;
+        height: 8vw;
         background: #fff;
     }
     .sec1,.sec2 {
@@ -17,11 +17,11 @@
         flex-direction: column;
         text-align: center;
         .principal{
-            @include fontstyle($fontfamily2,6.94vw,700,$color-font1);
+            @include fontstyle($fontfamily2,5vw,700,$color-font1);
             line-height: 1;
         }
         .secundario{
-            @include fontstyle($fontfamily2,1.94vw,500,$color-font1);
+            @include fontstyle($fontfamily2,1.5vw,500,$color-font1);
         }
 
     }

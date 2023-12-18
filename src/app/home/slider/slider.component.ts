@@ -8,7 +8,7 @@ import { BootstrapOptions, Component, OnInit } from '@angular/core';
 export class SliderComponent{
 
 
-  fondoTar='../assets/img/slider_home/fondo1.webp'
-  images = [1, 2, 3, 4].map((n) => `/assets/img/slider_home/image ${n}.webp`);
+  fondoTar='assets/img/slider_home/fondo1.webp'
+  images = [1, 2, 3, 4].map((n) => `assets/img/slider_home/image ${n}.webp`);
   
 }
