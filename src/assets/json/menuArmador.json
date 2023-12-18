@@ -1,59 +1,86 @@
 [
   {
-    "menuItem": "Tamaño",
-    "flgSubmenu":1,
-    "subMenu": [
-      {
-        "subMenuItem": "Pequeña"
-      },
-      {
-        "subMenuItem": "Mediana"
-      },
-      {
-        "subMenuItem": "Grande"
-      }
-    ]
+    "idItem":0,
+    "idPadre":0,
+    "idHijo": 1,
+    "nombre":"Tamaño"
   },
   {
-    "menuItem": "Color",
-    "flgSubmenu":1,
-    "subMenu": [
-      {
-        "subMenuItem": "Celeste"
-      },
-      {
-        "subMenuItem": "Blanco"
-      },
-      {
-        "subMenuItem": "Azul"
-      }
-    ]
+    "idItem":1,
+    "idPadre":1,
+    "idHijo": null,
+    "nombre":"Pequeña"
   },
   {
-    "menuItem": "Piso",
-    "flgSubmenu":0,
-    "subMenu": []
+    "idItem":2,
+    "idPadre":1,
+    "idHijo": null,
+    "nombre":"Mediana"
   },
   {
-    "menuItem": "Solarium",
-    "flgSubmenu":0,
-    "subMenu": []
+    "idItem":3,
+    "idPadre":1,
+    "idHijo": null,
+    "nombre":"Grande"
   },
   {
-    "menuItem": "Luces",
-    "flgSubmenu":1,
-    "subMenu": [
-      {
-        "subMenuItem": "Blancas"
-      },
-      {
-        "subMenuItem": "De colores"
-      }
-    ]
+    "idItem":4,
+    "idPadre":0,
+    "idHijo": 2,
+    "nombre":"Color"
   },
   {
-    "menuItem": "Escaleras",
-    "flgSubmenu":0,
-    "subMenu": []
+    "idItem":5,
+    "idPadre":2,
+    "idHijo": null,
+    "nombre":"Celeste"
+  },
+  {
+    "idItem":6,
+    "idPadre":2,
+    "idHijo": null,
+    "nombre":"Blanco"
+  },
+  {
+    "idItem":7,
+    "idPadre":2,
+    "idHijo": null,
+    "nombre":"Azul"
+  },
+  {
+    "idItem":8,
+    "idPadre":0,
+    "idHijo": null,
+    "nombre":"Piso"
+  },
+  {
+    "idItem":9,
+    "idPadre":0,
+    "idHijo": null,
+    "nombre":"Solarium"
+  },
+  {
+    "idItem":10,
+    "idPadre":0,
+    "idHijo": 3,
+    "nombre":"Luces"
+  },
+  {
+    "idItem":11,
+    "idPadre":3,
+    "idHijo": null,
+    "nombre":"Blancas"
+  },
+  {
+    "idItem":12,
+    "idPadre":3,
+    "idHijo": null,
+    "nombre":"Color"
+  },
+  {
+    "idItem":13,
+    "idPadre":0,
+    "idHijo": null,
+    "nombre":"Escaleras"
   }
 ]

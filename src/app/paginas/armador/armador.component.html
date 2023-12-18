@@ -2,7 +2,27 @@
     <div class="menu-left">
         <nav>
             <ul class="navigation">
-                <div *ngFor="let item of menu; index as i">
+                <ng-container *ngFor="let items of menu">
+                    <li *ngIf="items.idPadre == 0"><a (click)="showmenu(items.idItem)">{{items.nombre}}</a></li>
+                    
+                    
+                    <ng-container *ngFor="let itemsub of menu">
+                        <input id={{items.idItem}} type="radio" name="submenuRadio">
+                        <div *ngIf="itemsub.idPadre === items.idHijo"  class="submenuShow" for="submenuRadio" >
+                            <div class="submenu">
+                                <li (click)="setPresu(itemsub.nombre, itemsub)"><a>{{itemsub.nombre}}</a></li>
+                            </div>
+                        </div>
+
+                    </ng-container>
+                    <!-- <input id={{i}} type="radio" name="submenuRadio">
+                    <div class="submenuShow" for="submenuRadio" >
+                        <div class="submenu" *ngFor="let subItem of items.nombre">
+                            <li (click)="setPresu(subItem.subMenuItem, subItem)"><a>{{subItem.subMenuItem}}</a></li>
+                        </div>
+                    </div> -->
+                </ng-container>
+                <!-- <div *ngFor="let item of menu; index as i">
                     <li><a (click)="showmenu(i)">{{item.menuItem}}<span *ngIf="item.flgSubmenu == 1">►</span></a></li>
                     <input id={{i}} type="radio" name="submenuRadio">
                     <div class="submenuShow" for="submenuRadio" >
@@ -10,7 +30,7 @@
                             <li (click)="setPresu(subItem.subMenuItem, subItem)"><a>{{subItem.subMenuItem}}</a></li>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <li><a (click)="setPresu('TEST',subMenu)">TEST</a></li>
             </ul>
         </nav>

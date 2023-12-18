@@ -19,6 +19,7 @@ export class ArmadorComponent implements OnInit{
 
     let ID = new Number(radID);
     let check = document.getElementById(ID.toString()) as HTMLInputElement | null;
+    
 
     if (check != null) {
       check.checked ? check.checked = false : check.checked = true;

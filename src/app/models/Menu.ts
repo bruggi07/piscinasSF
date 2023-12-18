@@ -1,7 +1,8 @@
-export class Menu{
+export class Menu {
 
-    MId:number = 0;
-    menuItem:string ="";
-    subMenu: any[]=[];
-    
+    idItem: number= 0;
+    idPadre: number = 0;
+    idHijo: number = 0;
+    nombre: string = "";
+
 }
