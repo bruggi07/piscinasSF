@@ -1,0 +1,63 @@
+[
+    {
+        "titulo":"Pisos Atérmicos",
+        "cards":[
+            {
+                "tituloCard":"Comodidad",
+                "textoCard":"Diseñados para resistir y mitigar el calor generado por la exposición constante al sol.",
+                "imagenCard":"/assets/img/produc/p1.webp"
+            },
+            {
+                "tituloCard":"Seguridad",
+                "textoCard":"Superficie antideslizante para garantizar la seguridad de tu familia.",
+                "imagenCard":"/assets/img/produc/p1.webp"
+            },
+            {
+                "tituloCard":"Estética",
+                "textoCard":"Nuestra amplia gama de diseños le permite personalizar las areas circundantes de su piscina como mas le agrade.",
+                "imagenCard":"/assets/img/produc/p2.webp"
+            }
+        ]
+    },
+    {
+        "titulo":"Solados",
+        "cards":[
+            {
+                "tituloCard":"Estética y elegancia",
+                "textoCard":"Adaptados a las preferencias y gustos de nuestros clientes, los solados realzan la elegancia de tu piscina y de tu patio.",
+                "imagenCard":"/assets/img/produc/p4.webp"
+            },
+            {
+                "tituloCard":"Diseños exclusivos",
+                "textoCard":"Variedad de diseños que resaltan la belleza de tu piscina. Desde patrones modernos hasta acabados rústicos.",
+                "imagenCard":"/assets/img/produc/p3.webp"
+            },
+            {
+                "tituloCard":"Texturas Sofisticadas",
+                "textoCard":"Variedad de diseños que resaltan la belleza de tu piscina. Desde patrones modernos hasta acabados rústicos.",
+                "imagenCard":"/assets/img/produc/p1.webp"
+            }
+        ]
+    },
+    {
+        "titulo":"Accesorios",
+        "cards":[
+            {
+                "tituloCard":"Comodidad",
+                "textoCard":"Diseñados para resistir y mitigar el calor generado por la exposición constante al sol.",
+                "imagenCard":"/assets/img/produc/p1.webp"
+            },
+            {
+                "tituloCard":"Seguridad",
+                "textoCard":"Superficie antideslizante para garantizar la seguridad de tu familia.",
+                "imagenCard":"/assets/img/produc/p1.webp"
+            },
+            {
+                "tituloCard":"Estética",
+                "textoCard":"Nuestra amplia gama de diseños le permite personalizar las areas circundantes de su piscina como mas le agrade.",
+                "imagenCard":"/assets/img/produc/p1.webp"
+            }
+        ]
+    }
+
+]

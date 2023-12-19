@@ -41,6 +41,7 @@ export class ArmadorComponent implements OnInit {
     if (!sessionStorage.getItem('presu')) {
       sessionStorage.setItem('presu', '');
     }
+    window.scrollTo(0, 0)
   }
 
   setPresu(input: string, flg: number, id: number): void {

@@ -1,11 +1,22 @@
 <div class="wrappercarru">
-    <ngb-carousel *ngIf="images">
-        <ng-template ngbSlide *ngFor="let img of images">
-            <div class="carousel-caption">
-                <span>sadasdas</span>
-            </div>
+    <div class="tituloProd">
+        <h1>Productos</h1>
+    </div>
+    <ngb-carousel *ngIf="productos">
+        <ng-template ngbSlide *ngFor="let prod of productos">
+            <!-- <div class="carousel-caption">
+                <span>{{prod.titulo}}</span>
+            </div> -->
             <div class="picsum-img-wrapper">
-                <img [src]="img" alt="Random first slide" />
+                <ng-container *ngFor="let card of prod.cards">
+                   <div class="cardProd">
+                     <h2>{{card.tituloCard}}</h2>
+                     <p>{{card.textoCard}}</p>
+                     <div class="imgwrapper">
+                        <img src="{{card.imagenCard}}">
+                     </div>
+                   </div>
+                </ng-container>
             </div>
         </ng-template>
     </ngb-carousel>

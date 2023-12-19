@@ -1,11 +1,15 @@
 @import '/src/styles.scss';
-
+$paddingSlider: 0 17vw;
 .wrappercarru{
     display: flex;
+    flex-direction: column;
     position: relative;
-    // top: - $height-header;
     width: 100%;
     margin: 0;
+    .tituloProd{
+        
+    padding: $paddingSlider;
+    }
 }
 ngb-carousel{
     width: 100%;
@@ -25,125 +29,67 @@ ngb-carousel{
 }
 :host ::ng-deep  .carousel-control-next{
     @include controls();
-    right: 3.33vw;
+    // right: 3.33vw;
 }
 :host ::ng-deep  .carousel-control-prev{
     @include controls();
-    left: 3.33vw;
+    // left: 3.33vw;
 }
 @mixin icons-carru($url){
-    background-image: url($url);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 2.5vw;
-    width: 2vw;
+    // background-image: url($url);
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // height: 2.5vw;
+    // width: 2vw;
 }
 :host ::ng-deep  .carousel-control-next-icon{
     @include icons-carru("/assets/img/slider_home/slideRight.svg");
-    margin-left: 0.25vw;
+    // margin-left: 0.25vw;
 
 }
 :host ::ng-deep  .carousel-control-prev-icon{
     @include icons-carru("/assets/img/slider_home/slideLeft.svg");
-    margin-right: 0.25vw;
+    // margin-right: 0.25vw;
 }
 
 
 .picsum-img-wrapper{
-    width: 100%;
-    height: 50vh;
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit:cover;
-    }
-}
-
-.contenedor_slider {
     display: flex;
-    position: relative;
-    top: - $height-header;
+    padding: $paddingSlider;
     width: 100%;
-    margin: 0;
-
-    .slider {
-        position: relative;
+    height: 61.29vh;
+    gap: 2.5vw;
+    .cardProd{
         display: flex;
-        width: 100%;
-
-        .btn_slider {
-            span {
-                display: flex;
-                position: absolute;
-                background: #fff;
-                height: 4.44vw;
-                width: 4.44vw;
-                border-radius: 50%;
-                z-index: 1;
-                justify-content: center;
-                top: 50%;
-                cursor: pointer;
-
-                img {
-                    width: 30%;
-                }
-
-                &:first-child {
-                    left: 3.33vw;
-
-                    img {
-                        margin-right: 0.25vw;
-                    }
-                }
-
-                &:last-child {
-                    right: 3.33vw;
-
-                    img {
-                        margin-left: 0.25vw;
-                    }
-                }
-            }
-
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.4vw 0.5vw;
+        width: 20vw;
+        height: 26.389vw;
+        background-color: #F2F8FBBF;
+        border-radius: 1.389vw;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        text-align: center;
+        h2{
+            display: flex;
+            @include fontstyle ($family:$fontfamily2,$size:1.667vw,$weight:500,$color:#333);
         }
-
-        .tar {
-            position: relative;
-            height: 53.5vw;
-            width: 100%;
-            background-repeat: no-repeat;
-            background-size: 100%;
-
-            .home_slider {
-                position: absolute;
-                left: 11.25vw;
-                top: 18.40vw;
-                color: $color-font1;
-
-                .text_slider {
-                    display: flex;
-                    flex-direction: column;
-
-                    h1 {
-                        @include fontstyle($fontfamily1, $size-h1-slider, 600, $color-font1);
-                        margin-bottom: 2.22vw;
-                        
-                    }
-
-                    p {
-
-                        width: 44.44vw;
-                        @include fontstyle($fontfamily2, $size-p-slider, 400, $color-font1);
-                        margin-bottom: 3.68vw;
-                    }
-                }
-
-                .btns_home_slider {
-                    display: flex;
-                    gap: 1.04vw;
-                    @include botones();
-                }
+        p{
+            @include fontstyle ($family:$fontfamily2,$size:1.389vw,$weight:400,$color:#333);
+        }
+        .imgwrapper{
+            display: flex;
+            width: 18vw;
+            height: 8vw;
+            background-color: azure;
+            border-radius: 1.389vw;
+            overflow: hidden;
+            img{
+                object-fit: cover;
+                width: 100%;
             }
         }
     }
+    
 }

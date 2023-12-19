@@ -1,16 +1,16 @@
 [
     {
-        "icono":"#",
+        "icono":"/assets/img/Home/seccionOlas/manitoIcon.svg",
         "titulo":"Ingresá al simulador",
         "texto":"Ingresa a nuestro constructor virtual y arma tu piscina como mas te guste!"
     },
     {
-        "icono":"/assets/img/Home/seccionOlas/2.svg",
+        "icono":"/assets/img/Home/seccionOlas/PersoIcon.svg",
         "titulo":"Personalización",
         "texto":"Personaliza tu piscina con las medidas y los accesorios que quieras agregarle"
     },
     {
-        "icono":"/assets/img/Home/seccionOlas/3.svg",
+        "icono":"/assets/img/Home/seccionOlas/cotiIcon.svg",
         "titulo":"Cotización",
         "texto":"Una vez armada, toca el boton de Cotizar para que nos contactemos con vos a la brevedad"
     }
