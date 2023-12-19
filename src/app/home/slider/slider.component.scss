@@ -1,20 +1,20 @@
-@import '/src/styles.scss';
-$paddingSlider: 0 17vw;
-.wrappercarru{
+@import "/src/styles.scss";
+.wrappercarru {
     display: flex;
     flex-direction: column;
     position: relative;
+    justify-content: center;
+    background-image: url('../../../assets/img/Home/imginicio.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    margin: 0;
-    .tituloProd{
-        
-    padding: $paddingSlider;
+    padding: 0 10vw;
+    height: 50vw;
+    .tituloProd {
+        padding-bottom: 3vw;
     }
 }
-ngb-carousel{
-    width: 100%;
-}
-@mixin controls(){
+@mixin controls() {
     display: none;
     // display: flex;
     // position: absolute;
@@ -27,39 +27,37 @@ ngb-carousel{
     // top: 50%;
     // cursor: pointer;
 }
-:host ::ng-deep  .carousel-control-next{
+:host ::ng-deep .carousel-control-next {
     @include controls();
     // right: 3.33vw;
 }
-:host ::ng-deep  .carousel-control-prev{
+:host ::ng-deep .carousel-control-prev {
     @include controls();
     // left: 3.33vw;
 }
-@mixin icons-carru($url){
+@mixin icons-carru($url) {
     // background-image: url($url);
     // background-size: contain;
     // background-repeat: no-repeat;
     // height: 2.5vw;
     // width: 2vw;
 }
-:host ::ng-deep  .carousel-control-next-icon{
+:host ::ng-deep .carousel-control-next-icon {
     @include icons-carru("/assets/img/slider_home/slideRight.svg");
     // margin-left: 0.25vw;
-
 }
-:host ::ng-deep  .carousel-control-prev-icon{
+:host ::ng-deep .carousel-control-prev-icon {
     @include icons-carru("/assets/img/slider_home/slideLeft.svg");
     // margin-right: 0.25vw;
 }
 
-
-.picsum-img-wrapper{
+.picsum-img-wrapper {
     display: flex;
-    padding: $paddingSlider;
     width: 100%;
-    height: 61.29vh;
-    gap: 2.5vw;
-    .cardProd{
+    height: 30vw;
+    justify-content: center;
+    gap: 5vw;
+    .cardProd {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -67,29 +65,29 @@ ngb-carousel{
         padding: 1.4vw 0.5vw;
         width: 20vw;
         height: 26.389vw;
-        background-color: #F2F8FBBF;
+        background-color: #f2f8fbbf;
         border-radius: 1.389vw;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         text-align: center;
-        h2{
+        h2 {
             display: flex;
-            @include fontstyle ($family:$fontfamily2,$size:1.667vw,$weight:500,$color:#333);
+            @include fontstyle($family: $fontfamily2, $size: 1.667vw, $weight: 500, $color: #333);
         }
-        p{
-            @include fontstyle ($family:$fontfamily2,$size:1.389vw,$weight:400,$color:#333);
+        p {
+            @include fontstyle($family: $fontfamily2, $size: 1.389vw, $weight: 400, $color: #333);
         }
-        .imgwrapper{
+        .imgwrapper {
             display: flex;
             width: 18vw;
             height: 8vw;
             background-color: azure;
             border-radius: 1.389vw;
             overflow: hidden;
-            img{
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            img {
                 object-fit: cover;
                 width: 100%;
             }
         }
     }
-    
 }

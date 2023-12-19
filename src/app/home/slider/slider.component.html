@@ -4,9 +4,9 @@
     </div>
     <ngb-carousel *ngIf="productos">
         <ng-template ngbSlide *ngFor="let prod of productos">
-            <!-- <div class="carousel-caption">
+            <div class="carousel-caption">
                 <span>{{prod.titulo}}</span>
-            </div> -->
+            </div>
             <div class="picsum-img-wrapper">
                 <ng-container *ngFor="let card of prod.cards">
                    <div class="cardProd">

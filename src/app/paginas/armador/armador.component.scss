@@ -1,6 +1,9 @@
 @import "/src/styles.scss";
 .armador{
     display: flex;
+    background-image: url("../../../assets/img/Home/fondoOlasNuestrosClientes.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
     .menu-left{
         display: flex;
         position: relative;
@@ -23,6 +26,7 @@
             a {
             display: flex;
             flex-direction: row;
+            align-items: center;
             }
           }
           
