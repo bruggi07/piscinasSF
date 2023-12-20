@@ -16,9 +16,10 @@
         </nav>
     </div>
     <div class="cont-armador">
-        <div><p>{{presupuesto}}</p></div>
-        <div class="armador">
-            <div *ngIf="localPres">Mensaje seteado en localStorage: <p>{{localPres}}</p></div>
+        <span><p>{{presupuesto}}</p></span>
+        <span *ngIf="localPres">Mensaje seteado en localStorage: <p>{{localPres}}</p></span>
+        <div class="arm-part">
+            <div><img src="assets/img/armador/piscinanobackground.png" alt="Piscina"></div>
         </div>
     </div>
 </div>
