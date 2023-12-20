@@ -18,6 +18,7 @@ import { SeccionOlasComponent } from './home/seccion-olas/seccion-olas.component
 import { NuestrosTrabajosComponent } from './home/nuestros-trabajos/nuestros-trabajos.component';
 import { ValidacionComponent } from './home/validacion/validacion.component';
 import { ImgInicioComponent } from './home/img-inicio/img-inicio.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { ImgInicioComponent } from './home/img-inicio/img-inicio.component';
     SeccionOlasComponent,
     NuestrosTrabajosComponent,
     ValidacionComponent,
-    ImgInicioComponent
+    ImgInicioComponent,
+    NotFoundComponent
     
   ],
   imports: [
