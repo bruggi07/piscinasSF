@@ -8,9 +8,6 @@ import { UtilService } from '../services/util.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  constructor(public router: Router, public scroll: UtilService) { }
+  constructor(public router: Router) { }
 
-  irA(el: string): void {
-    this.scroll.scrollTo(el);
-  }
 }

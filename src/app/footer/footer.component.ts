@@ -7,9 +7,5 @@ import { UtilService } from '../services/util.service';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
-  constructor(public scroll: UtilService) { }
 
-  irA(el: string): void {
-    this.scroll.scrollTo(el);
-  }
 }

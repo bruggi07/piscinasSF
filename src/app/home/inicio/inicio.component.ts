@@ -8,9 +8,4 @@ import { UtilService } from 'src/app/services/util.service';
 })
 export class InicioComponent {
 
-  constructor(public scroll: UtilService){}
-
-  irA(el: string){
-    this.scroll.scrollTo(el);
-  }
 }

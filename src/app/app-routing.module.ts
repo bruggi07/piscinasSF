@@ -11,7 +11,11 @@ const rutas:Routes=[
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(rutas)],
+  imports: [RouterModule.forRoot(rutas, { 
+    useHash: true,
+    scrollPositionRestoration: 'enabled',
+    anchorScrolling: 'enabled',
+   }),],
   exports: [RouterModule]
 })
 

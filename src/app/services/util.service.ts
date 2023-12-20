@@ -17,7 +17,7 @@ export class UtilService {
   urlCards: string = environment.urlCards;
   urlProductos: string = environment.urlProductos
 
-  constructor(public http: HttpClient,private router: Router,private location: Location) { }
+  constructor(public http: HttpClient, private router: Router, private location: Location) { }
 
   // obtener menu
   getMenu(): Observable<Menu[]> {
@@ -33,16 +33,15 @@ export class UtilService {
     return this.http.get<Productos[]>(this.urlProductos); Observable
   }
 
-  scrollTo(el: string): void {
-    let elemento = document.getElementById(el) as HTMLElement;
-    let ruta = this.router.url
-    if (elemento != null && ruta === '/') {
-      elemento.scrollIntoView();
-    }
-    else{
-      this.router.navigate(['/']);
-      elemento.scrollIntoView();
-      
-    }
-  }
+  // scrollTo(id: string): void {
+  //   let elemento = document.getElementById(id) as HTMLElement;
+  //   let ruta = this.router.url
+  //   if (elemento != null && ruta === '/') {
+  //     elemento.scrollIntoView();
+  //   }
+  //   else {
+  //     this.router.navigate(['/']); 
+  //     elemento.scrollIntoView();
+  //   }
+  // }
 }
