@@ -1,7 +1,7 @@
-export class Card {
+export interface Card {
 
-    icono: string = "";
-    titulo: string = "";
-    texto: string = "";
+    icono: string;
+    titulo: string;
+    texto: string;
 
 }

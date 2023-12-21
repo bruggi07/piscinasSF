@@ -16,10 +16,11 @@
         </nav>
     </div>
     <div class="cont-armador">
-        <span><p>{{presupuesto}}</p></span>
-        <span *ngIf="localPres">Mensaje seteado en localStorage: <p>{{localPres}}</p></span>
+        <!-- <span><p>{{Piscina.Color}}</p></span> -->
+        <!-- <span *ngIf="localPres">Mensaje seteado en localStorage: <p>{{localPres}}</p></span> -->
         <div class="arm-part">
-            <div><img src="assets/img/armador/piscinanobackground.png" alt="Piscina"></div>
+            <div *ngIf="Piscina.Color == 'Celeste' || !Piscina.Color"><img src="assets/img/armador/piscinanobackground.png" alt="Piscina"></div>
+            <div *ngIf="Piscina.Escaleras"><img src="assets/img/armador/piscinaEscalera.png" alt="Piscina"></div>
         </div>
     </div>
 </div>

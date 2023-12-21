@@ -1,6 +1,6 @@
-export class Productos {
+export interface Productos {
 
-    titulo: string = "";
-    cards: any[]= [];
+    titulo: string;
+    cards: any[];
 
 }

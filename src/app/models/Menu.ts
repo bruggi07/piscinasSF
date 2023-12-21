@@ -1,7 +1,7 @@
-export class Menu{
+export interface Menu{
 
-    MId:number = 0;
-    menuItem:string ="";
-    subMenu: any[]=[];
+    MId:number;
+    menuItem:string;
+    subMenu: any[];
     
 }

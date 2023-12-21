@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PiscinaDTO } from 'src/app/models/PiscinaDTO';
 import { UtilService } from 'src/app/services/util.service';
 
 @Component({
@@ -7,18 +8,13 @@ import { UtilService } from 'src/app/services/util.service';
   styleUrls: ['./armador.component.scss']
 })
 
-export class ArmadorComponent implements OnInit {
+export class ArmadorComponent implements OnInit{
 
-  menu: any
-  subMenu: any
-  presupuesto: string = "";
+  menu: any;
+  subMenu: any;
+  Msjpresupuesto: string = "";
   localPres: any = sessionStorage.getItem('presu');
-  msjT: string = "";
-  msjC: string = "";
-  msjP: string = "";
-  msjS: string = "";
-  msjE: string = "";
-  msjL: string = "";
+  Piscina: any;
 
   constructor(public menuService: UtilService) { }
 
@@ -33,6 +29,7 @@ export class ArmadorComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
     this.menuService.getMenu().subscribe({
       next: (menu: any) => {
         this.menu = menu;
@@ -41,41 +38,51 @@ export class ArmadorComponent implements OnInit {
     if (!sessionStorage.getItem('presu')) {
       sessionStorage.setItem('presu', '');
     }
-    // window.scrollTo(0, 0)
+
+    this.Piscina = new PiscinaDTO();
   }
+
+
 
   setPresu(input: string, flg: number, id: number): void {
 
     if (flg == 1) {
       if (id == 0) {
-        this.msjT = 'de tamaño: ' + input;
+        this.Piscina.setTamaño(input);
       }
 
       if (id == 1) {
-        this.msjC = ', de color: ' + input;
+        this.Piscina.setColor(input);
       }
       if (id == 2) {
-        this.msjP = ', con el piso: ' + input;
+        this.Piscina.setPiso(input);
       }
       if (id == 4) {
-        this.msjL = ', luces de color: ' + input;
+        this.Piscina.setLuces(input);
       }
     } else if (flg == 0) {
       if (id == 3) {
-        this.msjS = ', con solarium';
+        this.Piscina.setSolarium('Solarium');
       }
       if (id == 5) {
-        this.msjE = ', con escaleras ';
+        this.Piscina.setEscaleras('Escaleras');
       }
     }
+    this.crearMensaje();
+    
+    // this.presupuesto = this.presupuesto.replace('undefined', '').trim();
+    sessionStorage.setItem('presu', this.Msjpresupuesto);
+    localStorage.setItem('PiscLocal',JSON.stringify(this.Piscina));
+  }
 
-    this.presupuesto = 'Hola, quisiera un presupuesto para una piscina ' + this.msjT + this.msjC + this.msjP + this.msjS + this.msjL + this.msjE;
-    this.presupuesto = this.presupuesto.replace('undefined', '').trim();
-    sessionStorage.setItem('presu', this.presupuesto);
+  crearMensaje(): void {
+    if (this.Piscina.getDataStatus()) {
+      this.Msjpresupuesto = 'Hola, quisiera un presupuesto para una piscina ' + this.Piscina.getMsjTamaño() + this.Piscina.getMsjColor() + this.Piscina.getMsjPiso() + this.Piscina.getMsjSolarium() + this.Piscina.getMsjLuces() + this.Piscina.getMsjEscaleras();
+    }
   }
 
   reiniciarMsj(): void{
-    this.presupuesto = '';
+    this.Msjpresupuesto = '';
     sessionStorage.setItem('presu', '');
     window.location.reload();
   }
