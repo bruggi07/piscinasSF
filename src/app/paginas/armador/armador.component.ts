@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PiscinaDTO } from 'src/app/models/PiscinaDTO';
+import { PiscinaService } from 'src/app/services/piscina.service';
 import { UtilService } from 'src/app/services/util.service';
 
 @Component({
@@ -16,7 +17,7 @@ export class ArmadorComponent implements OnInit{
   localPres: any = sessionStorage.getItem('presu');
   Piscina: any;
 
-  constructor(public menuService: UtilService) { }
+  constructor(public menuService: UtilService, private p : PiscinaService) { }
 
   showmenu(radID: number): void {
 
@@ -48,31 +49,29 @@ export class ArmadorComponent implements OnInit{
 
     if (flg == 1) {
       if (id == 0) {
-        this.Piscina.setTamaño(input);
+        this.p.setPiscinaTamano(this.Piscina, input);
       }
-
       if (id == 1) {
-        this.Piscina.setColor(input);
+        this.p.setPiscinaColor(this.Piscina, input);
       }
       if (id == 2) {
-        this.Piscina.setPiso(input);
+        this.p.setPiscinaPiso(this.Piscina, input);
       }
       if (id == 4) {
-        this.Piscina.setLuces(input);
+        this.p.setPiscinaLuces(this.Piscina, input);
       }
     } else if (flg == 0) {
       if (id == 3) {
-        this.Piscina.setSolarium('Solarium');
+        this.p.setPiscinaSolarium(this.Piscina, input);
       }
       if (id == 5) {
-        this.Piscina.setEscaleras('Escaleras');
+        this.p.setPiscinaEscaleras(this.Piscina, input);
       }
     }
     this.crearMensaje();
     
     // this.presupuesto = this.presupuesto.replace('undefined', '').trim();
     sessionStorage.setItem('presu', this.Msjpresupuesto);
-    localStorage.setItem('PiscLocal',JSON.stringify(this.Piscina));
   }
 
   crearMensaje(): void {
@@ -84,6 +83,7 @@ export class ArmadorComponent implements OnInit{
   reiniciarMsj(): void{
     this.Msjpresupuesto = '';
     sessionStorage.setItem('presu', '');
+    localStorage.setItem('PiscLocal','');
     window.location.reload();
   }
 }

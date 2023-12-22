@@ -3,7 +3,7 @@
         <nav>
             <ul class="navigation">
                 <div *ngFor="let item of menu; index as i">
-                    <li><a (click)="showmenu(i); setPresu(item.MenuItem, 0, item.id)">{{item.menuItem}}<span style="font-size: 0.5vw;" *ngIf="item.flgSubmenu == 1">►</span></a></li>
+                    <li><a (click)="showmenu(i); setPresu(item.menuItem, 0, item.id)">{{item.menuItem}}<span style="font-size: 0.5vw;" *ngIf="item.flgSubmenu == 1">►</span></a></li>
                     <input id={{i}} type="radio" name="submenuRadio">
                     <div class="submenuShow" for="submenuRadio" >
                         <div class="submenu" *ngFor="let subItem of item.subMenu">
@@ -16,7 +16,7 @@
         </nav>
     </div>
     <div class="cont-armador">
-        <!-- <span><p>{{Piscina.Color}}</p></span> -->
+        <span><p>{{Msjpresupuesto}}</p></span>
         <!-- <span *ngIf="localPres">Mensaje seteado en localStorage: <p>{{localPres}}</p></span> -->
         <div class="arm-part">
             <div *ngIf="Piscina.Color == 'Celeste' || !Piscina.Color"><img src="assets/img/armador/piscinanobackground.png" alt="Piscina"></div>

@@ -32,16 +32,4 @@ export class UtilService {
   getProductos(): Observable<Productos[]> {
     return this.http.get<Productos[]>(this.urlProductos); Observable
   }
-
-  // scrollTo(id: string): void {
-  //   let elemento = document.getElementById(id) as HTMLElement;
-  //   let ruta = this.router.url
-  //   if (elemento != null && ruta === '/') {
-  //     elemento.scrollIntoView();
-  //   }
-  //   else {
-  //     this.router.navigate(['/']); 
-  //     elemento.scrollIntoView();
-  //   }
-  // }
 }
