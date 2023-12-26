@@ -31,6 +31,36 @@
     @include controls();
     // right: 3.33vw;
 }
+:host ::ng-deep .carousel-indicators {
+    top: -2vw;
+    z-index: 1;
+    button{
+        width: 12vw;
+        background-color: #00000033;
+        
+    }
+    .active{
+        background-color: #4A989B;
+    }
+}
+:host ::ng-deep .carousel-inner{
+    overflow: visible;
+}
+.titulocard{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    align-items: start;
+    justify-content: center;
+    inset: 0;
+    top: -4vw;
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin: auto;
+    color: #4A989B;
+    
+    
+}
 :host ::ng-deep .carousel-control-prev {
     @include controls();
     // left: 3.33vw;

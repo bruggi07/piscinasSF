@@ -17,7 +17,7 @@ export class SliderComponent implements OnInit{
     this.producService.getProductos().subscribe({
       next : (productos: any) => {
         this.productos = productos;
-    }})
+    }});
 
 
   }

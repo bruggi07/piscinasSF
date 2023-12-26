@@ -9,55 +9,40 @@ export class PiscinaDTO implements Piscina{
     Luces: string = "";
     Escaleras: string = "";
 
-	constructor() {
-	}
+	constructor() {}
 
 
     //mensajes armados ¿?
     getMsjTamaño(): string {
-        if (this.Tamano) {
-            return ' de tamaño: ' + this.Tamano;
-        }
+        if (this.Tamano) return ' de tamaño: ' + this.Tamano;
         return '';
         
     }
     getMsjColor(): string {
-        if (this.Color) {
-             return ', de color: ' + this.Color;
-        }
+        if (this.Color) return ', de color: ' + this.Color;
         return '';
        
     }
     getMsjPiso(): string {
-        if (this.Piso) {
-            return ', con el piso: ' + this.Piso;
-        }
+        if (this.Piso) return ', con el piso: ' + this.Piso;
         return '';
     }
     getMsjSolarium(): string {
-        if (this.Solarium) {
-            return ', con solarium';
-        }
+        if (this.Solarium) return ', con solarium';
         return '';
     }
     getMsjLuces(): string {
-        if (this.Luces) {
-            return ', luces de color: ' + this.Luces;
-        }
+        if (this.Luces) return ', luces de color: ' + this.Luces;
         return '';
     }
     getMsjEscaleras(): string {
-        if (this.Escaleras) {
-            return ', con escaleras';
-        }
+        if (this.Escaleras) return ', con escaleras';
         return '';
     }
     
     getDataStatus(): boolean{
-        if (this.Tamano || this.Color || this.Piso || this.Solarium || this.Luces || this.Escaleras) {
-         return true;
-        }
-        return false
+        if (this.Tamano || this.Color || this.Piso || this.Solarium || this.Luces || this.Escaleras) return true;
+        return false;
     }
 
     // getters
